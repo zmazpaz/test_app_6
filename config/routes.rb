@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   # root "application#hello" # NOT application_controller! #hello is the method in the controller we want to point to
   #
   root 'pages#home'
+
+  get 'about', to: 'pages#about'
 end
